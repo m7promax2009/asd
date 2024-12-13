@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+
+const firstInput = prompt("Iltimos, birinchi so'zni kiriting:");
+const secondInput = prompt("Iltimos, ikkinchi so'zni kiriting:");
+
+const choice = prompt("1 yoki 2 ni tanlang:\n1 - Katta harflarga o'girish\n2 - Teskarisini ko'rsatish");
+
+if (choice === "1") {
+    alert(`Katta harf: ${firstInput.toUpperCase()} ${secondInput.toUpperCase()}`);
+} else if (choice === "2") {
+    const reversedFirst = firstInput.split("").reverse().join("");
+    const reversedSecond = secondInput.split("").reverse().join("");
+    alert(`Teskari: ${reversedFirst} ${reversedSecond}`);
+} else {
+    alert("Noto'g'ri tanlov qilindi. Faqat 1 yoki 2 ni tanlang.");
+}
+</script>
+</body>
+</html>
